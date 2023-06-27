@@ -6,7 +6,7 @@ import (
 )
 
 // AnalyzerPlugin will be deprecated in the new version. New function shall be defined
-// https://github.com/golangci/golangci-lint/pull/3887/fileshttps://github.com/golangci/golangci-lint/pull/3887/files
+// https://github.com/golangci/golangci-lint/pull/3887/files
 func New(_ any) ([]*analysis.Analyzer, error) {
 	return []*analysis.Analyzer{sqlnoctx.Analyzer}, nil
 }
